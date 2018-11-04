@@ -215,7 +215,7 @@ project.lock.json
 
 # Credentials
 credentials.json
-
+todos.txt
 #####
 # End of core ignore list, below put you custom 'per project' settings (patterns or path)
 #####

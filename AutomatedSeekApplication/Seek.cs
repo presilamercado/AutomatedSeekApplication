@@ -14,9 +14,9 @@ namespace AutomatedSeekApplication
     class Seek
     {
         IWebDriver _driver = new ChromeDriver();
-        public void SignIn()
+        public Boolean  SignIn()
         {
-           
+            Boolean isSigin = true;
             // Navigate to Sign-in
             _driver.Navigate().GoToUrl("https://www.seek.co.nz/sign-in");
             _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
@@ -44,6 +44,9 @@ namespace AutomatedSeekApplication
                 }
             }
             password.SendKeys(Keys.Enter);
+
+            return isSigin;
+            
         }
 
         public void SignOut()
