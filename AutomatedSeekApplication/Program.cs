@@ -4,12 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using OpenQA.Selenium.Support.UI;
-using System.Threading;
-using Newtonsoft.Json;
-
-
-
 namespace AutomatedSeekApplication
 {
     class Program
@@ -19,6 +13,10 @@ namespace AutomatedSeekApplication
 
             Seek seek = new Seek();
             seek.SignIn();
+
+            seek.ListJobs();
+
+            
 
         }
     }
